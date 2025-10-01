@@ -103,11 +103,3 @@ While simple in functionality, it represents my first hands-on experience with F
 - 📱 Mobile-first redesign using modern frameworks (Bootstrap / TailwindCSS)
 
 - 📩 Contact form with email integration
-
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
