@@ -1,17 +1,25 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from dotenv import load_dotenv
 from datetime import datetime
-import smtplib
-import os
+import urllib.parse
 
 load_dotenv()
 
-def send_email(name, email, msg):
-    with smtplib.SMTP("smtp.gmail.com", 587) as server:
-        server.starttls()
-        server.login("alejandrorey2654@gmail.com", os.getenv("GMAIL_APP_PASSWORD"))
-        server.sendmail("alejandrorey2654@gmail.com", "alejandrorey2654@gmail.com",
-                        f"Subject:Portfolio | {name} | {email}\n\n{msg}")
+import urllib.parse
+
+def send_whatsapp(name, email, message):
+    # Tu número de WhatsApp (sin +)
+    phone_number = "584149771310"
+
+    # Codificamos el mensaje para que se vea bien en la URL
+    text = f"Hola, soy {name} ({email}). \n\n{message}"
+    encoded_text = urllib.parse.quote(text)
+
+    # Creamos el enlace de WhatsApp
+    whatsapp_url = f"https://wa.me/{phone_number}?text={encoded_text}"
+
+    # Redirigimos al usuario al chat de WhatsApp
+    return redirect(whatsapp_url)
 
 app = Flask(__name__)
 
@@ -26,8 +34,11 @@ def home():
 @app.route("/contact", methods=['GET', 'POST'])
 def contact():
     if request.method == "POST":
-        send_email(name=request.form.get("name"), email=request.form.get("email"), msg=request.form.get('message_hidden'))
-        return render_template("contact.html", form_sended=["MESSAGE SENDED", "I will contact you!"])
+        name = request.form.get("name")
+        email = request.form.get("email")
+        message = request.form.get('message_hidden')
+        
+        return send_whatsapp(name=name, email=email, message=message)
     return render_template("contact.html", form_sended=["CONTACT", "Let's to talk!"])
 
 @app.route("/projects")
