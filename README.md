@@ -29,9 +29,9 @@ Inspired by a Canva template, it was fully implemented from scratch using Flask 
 
 ## 📸 Showcase
 
-![Homepage](./static/assets/gifs/home.gif)
-![Projects](./static/assets/screenshots/projects.png)
-![Contact](./static/assets/gifs/contact.gif)
+![Homepage](./static/assets/gifs/Home.gif)
+![Projects](./static/assets/screenshots/Projects.png)
+![Contact](./static/assets/gifs/Contact.gif)
 
 ---
 
