@@ -1,17 +1,18 @@
 # 🌐 Portfolio – Personal Website
 
-A personal portfolio website built with Python (Flask), HTML, and CSS.  
+A personal portfolio website built with Python (Flask), HTML, and CSS.
 
 ---
 
 ## 🌍 Overview
 
-Portfolio is my very first web project, created as part of the **100 Days of Python** course.  
+Portfolio is my very first web project, created as part of the **100 Days of Python** course.
 
-The website was designed to:  
-- Introduce myself  
-- Showcase my projects (initially placeholders)  
-- Provide a simple way for visitors to get in touch  
+The website was designed to:
+
+- Introduce myself
+- Showcase my projects (initially placeholders)
+- Provide a simple way for visitors to get in touch
 
 Inspired by a Canva template, it was fully implemented from scratch using Flask and Jinja templates.
 
@@ -19,27 +20,35 @@ Inspired by a Canva template, it was fully implemented from scratch using Flask 
 
 ## ✨ Features
 
-- 🏠 Home page with introduction and personal background  
-- 📂 Projects section (initial placeholder for future projects)  
-- 📞 Contact page linked to WhatsApp for easy communication  
-- 🖼 Template system with reusable `base.html`  
-- 🎨 Responsive design with custom CSS  
+- 🏠 Home page with introduction and personal background
+- 📂 Projects section (initial placeholder for future projects)
+- 📞 Contact page linked to WhatsApp for easy communication
+- 🖼 Template system with reusable `base.html`
+- 🎨 Responsive design with custom CSS
 
 ---
 
 ## 📸 Showcase
 
+### 🏠 Homepage
+
 ![Homepage](./static/assets/gifs/Home.gif)
+
+### 🚀 Projects
+
 ![Projects](./static/assets/screenshots/Projects.png)
+
+### 📞 Contact
+
 ![Contact](./static/assets/gifs/Contact.gif)
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Backend:** Flask (Python), Jinja Templates  
-- **Frontend:** HTML5, CSS3  
-- **Tools:** Canva (design inspiration), custom responsive CSS  
+- **Backend:** Flask (Python), Jinja Templates
+- **Frontend:** HTML5, CSS3
+- **Tools:** Canva (design inspiration), custom responsive CSS
 
 ---
 
@@ -68,17 +77,20 @@ Portfolio/
 ## ⚙️ Installation & Setup
 
 ### Clone repository:
+
 ```bash
 git clone https://github.com/fockus26/portfolio.git
 cd portfolio
 ```
 
 ### Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### Run
+
 ```bash
 python main.py
 ```
