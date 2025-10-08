@@ -27,6 +27,14 @@ Inspired by a Canva template, it was fully implemented from scratch using Flask 
 
 ---
 
+## 📸 Showcase
+
+![Homepage](./static/assets/gifs/Home.gif)
+![Projects](./static/assets/screenshots/Projects.png)
+![Contact](./static/assets/gifs/Contact.gif)
+
+---
+
 ## 🛠 Tech Stack
 
 - **Backend:** Flask (Python), Jinja Templates  
@@ -54,12 +62,6 @@ Portfolio/
 │
 └── README.md
 ```
-
----
-
-## 📸 Showcase
-
-_(Screenshots, GIFs or demo videos will be added here)_
 
 ---
 
