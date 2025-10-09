@@ -1,10 +1,5 @@
 from flask import Flask, render_template, request, redirect
-from dotenv import load_dotenv
 from datetime import datetime
-import urllib.parse
-
-load_dotenv()
-
 import urllib.parse
 
 def send_whatsapp(name, email, message):
