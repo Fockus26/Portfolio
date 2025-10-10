@@ -89,6 +89,16 @@ cd portfolio
 pip install -r requirements.txt
 ```
 
+### Environment Variables
+Create a `.env` file with:
+```env
+FLASK_KEY=YOUR_FLASK_KEY
+WHATSAPP_NUMBER=YOUR_WHATSAPP_PHONE_NUMBER
+```
+
+- **FLASK_KEY** → Key needed to run with Flask
+- **WHATSAPP_NUMBER** → Recipient phone number to reservations and contact form
+
 ### Run
 
 ```bash
